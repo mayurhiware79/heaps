@@ -6,14 +6,14 @@ public class priorityQueue_using_JCF {
          //sorts integers in ascending order
         // PriorityQueue<Integer> pq = new PriorityQueue<>();
         PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder()); //sorting integers in reverse priority desending
-        pq.add(2);
+        pq.add(2); //O(logn)
         pq.add(5);
         pq.add(1);
         pq.add(6);
 
         while(!pq.isEmpty()){
-            System.out.println(pq.peek());
-            pq.remove();
+            System.out.println(pq.peek()); //O(1)
+            pq.remove(); //O(logn)
         }
     }
 }

@@ -26,7 +26,7 @@ public class student_ranking_PQ {
     public static void main(String[] args) {
         PriorityQueue<Student> pq = new PriorityQueue<>(Comparator.reverseOrder());
 
-        pq.add(new Student("A", 4));
+        pq.add(new Student("A", 4)); //O(logn)
         pq.add(new Student("B", 6));
         pq.add(new Student("C", 2));
         pq.add(new Student("D", 12));
